@@ -1,0 +1,11 @@
+x = int( input("Ingrese el multiplicando: ") )
+y = int( input("Ingrese el multiplicador: ") )
+
+print( "\n{:10d}".format(x) )
+print( "x{:9d}".format(y) )
+print( "----------")
+print( "{:10d}".format( x * ( y % 10 ) ) )
+print( "+{:8d}-".format( x * (( y // 10 ) % 10) ) )
+print( "{:8d}--".format( x * (( y // 100 ) % 10) ) )
+print( "----------")
+print( "{:10d}".format( x * y ) )
